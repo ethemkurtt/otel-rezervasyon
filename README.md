@@ -69,6 +69,14 @@ Bu proje, Next.js + Express.js + MongoDB kullanılarak geliştirilmiş tam enteg
 ---
 
 
+Olceklenebilirlik
+
+- MongoDB ile esnek veri modeli
+- Redis ile verimli onbellekleme
+- Sayfalanmis listeleme
+- Mikroservis mimarisine kolay gecis
+- Docker ile kolay dagitim
+
 
 \## 📁 Proje Yapısı
 
@@ -197,6 +205,21 @@ npm run dev
 📊 Örnek Admin Girişi
 
 
+
+Öncesinde postman yada terminalde şu komutu çalıştırın 
+
+curl -X POST http://localhost:5000/api/register \
+  -H "Content-Type: application/json" \
+  -d '{
+    "fullName": "Demo Admin",
+    "email": "admin@otel.com",
+    "phone": "05550000000",
+    "birthDate": "1990-01-01",
+    "password": "123456",
+    "role": "admin"
+  }'
+
+Sonrasında şu bilgiler ile giriş yapabilirsiniz : 
 
 Email: admin@otel.com
 
